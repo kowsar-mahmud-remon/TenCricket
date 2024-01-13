@@ -38,7 +38,7 @@ const CurrentMatches = () => {
               <div className="">
                 {
                   matchDetails?.teamInfo?.map((info, i) => <div key={i} className="flex">
-                    <img className=' w-8 me-2 mb-5' src={info?.img} alt="" />
+                    <img className=' w-8 me-2 mb-3' src={info?.img} alt="" />
                     <h5>{info?.name}</h5>
                   </div>)
                 }

@@ -7,10 +7,16 @@ const cricketApi = api.injectEndpoints({
       providesTags: ["cricket"],
     }),
 
+    getAllCricketSeries: build.query({
+      query: () => "/cricketScoreboard/cricketSeries",
+      providesTags: ["cricket"],
+    }),
+
 
   }),
 });
 
 export const {
-  useGetAllCurrentMatchesQuery
+  useGetAllCurrentMatchesQuery,
+  useGetAllCricketSeriesQuery
 } = cricketApi;
