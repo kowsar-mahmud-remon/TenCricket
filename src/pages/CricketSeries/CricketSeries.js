@@ -26,7 +26,7 @@ const CurrentMatches = () => {
   return (
     <div className='max-w-[1280px] mx-auto px-5 my-20'>
       <h4 className='text-2xl font-semibold mb-3'>Cricket Next Series List</h4>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         {
           data?.data?.slice(0, itemsToShow)?.map(matchDetails => <div key={matchDetails?.id} className=' bg-slate-200 py-5 px-10 rounded-md'>
             <div className="flex justify-end text-slate-500 mb-3">
