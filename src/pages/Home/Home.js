@@ -1,12 +1,12 @@
 import React from 'react';
-import { useGetAllUsersQuery } from '../../redux/features/user/userApi';
+import CurrentMatches from '../CurrentMatches/CurrentMatches';
 
 const Home = () => {
-  const { data } = useGetAllUsersQuery({});
-  console.log(data);
+
   return (
     <div>
       This is home page
+      <CurrentMatches></CurrentMatches>
     </div>
   );
 };
