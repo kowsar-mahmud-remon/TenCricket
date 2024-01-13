@@ -1,12 +1,13 @@
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { useUserLoginMutation } from "../../redux/features/auth/authApi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { storeUserInfo } from "../../services/auth.service";
 
 const LoginPage = () => {
   const [userLogin] = useUserLoginMutation();
   const { register, handleSubmit } = useForm();
+  const navigate = useNavigate();
 
   const onSubmit = async (data) => {
     try {
@@ -14,6 +15,7 @@ const LoginPage = () => {
 
       if (res?.token) {
         toast.success("Login Successful!");
+        navigate('/');
       }
 
       storeUserInfo({ accessToken: res?.token });

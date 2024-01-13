@@ -2,10 +2,11 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { useCreateUserMutation } from "../../redux/features/user/userApi";
 import { storeUserInfo } from "../../services/auth.service";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
   const [createUser, { data }] = useCreateUserMutation();
+  const navigate = useNavigate();
 
   const { register, handleSubmit } = useForm();
 
@@ -19,6 +20,7 @@ const SignUpPage = () => {
 
       if (res?.token) {
         toast.success("Successfully Register!");
+        navigate('/');
       }
 
       storeUserInfo({ accessToken: res?.token });
