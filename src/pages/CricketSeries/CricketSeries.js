@@ -35,7 +35,7 @@ const CurrentMatches = () => {
 
             <p className='text-xl text-center mb-3'>{matchDetails?.name}</p>
             <p className=' text-center mb-3'>Total Match - {matchDetails?.matches}</p>
-            <div className="text-base flex justify-between">
+            <div className="text-base text-slate-600 flex justify-between">
               <p>Odi - {matchDetails?.odi}</p>
               <p>T20 - {matchDetails?.t20}</p>
               <p>Test - {matchDetails?.test}</p>

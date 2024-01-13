@@ -8,7 +8,7 @@ module.exports = {
       {
         mobiletheme: {
           primary: "#023e8a",
-          secondary: "#003566",
+          secondary: "#014f86",
           accent: "#000814",
           neutral: "#191D24",
           "base-100": "#FFFFFF",

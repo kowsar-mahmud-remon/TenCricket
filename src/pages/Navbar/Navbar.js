@@ -23,6 +23,12 @@ const Navbar = () => {
       <li className="">
         <Link to="/">Home</Link>
       </li>
+      <li className="">
+        <Link to="/currentMatches">Current Matches</Link>
+      </li>
+      <li className="">
+        <Link to="/nextSeries">Next Series</Link>
+      </li>
     </React.Fragment>
   );
 
