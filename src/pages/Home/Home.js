@@ -6,7 +6,6 @@ const Home = () => {
 
   return (
     <div>
-      This is home page
       <CurrentMatches></CurrentMatches>
       <CricketSeries></CricketSeries>
     </div>

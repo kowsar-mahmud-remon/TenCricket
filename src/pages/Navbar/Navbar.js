@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full bg-secondary sticky top-0 z-10" style={navbarShadow}>
-      <div className="max-w-[1440px] mx-auto navbar flex justify-between py-0">
+      <div className="max-w-[1280px] mx-auto navbar flex justify-between py-0">
         <div className="navbar-start w-full">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -38,8 +38,8 @@ const CurrentMatches = () => {
             <div className="text-base flex justify-between">
               <p>Odi - {matchDetails?.odi}</p>
               <p>T20 - {matchDetails?.t20}</p>
-              <p>test - {matchDetails?.test}</p>
-              <p>squads - {matchDetails?.squads}</p>
+              <p>Test - {matchDetails?.test}</p>
+              <p>Squads - {matchDetails?.squads}</p>
             </div>
           </div>)
         }
